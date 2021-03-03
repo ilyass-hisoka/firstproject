@@ -2,6 +2,7 @@ package com.store.manager;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Train {
 	 
@@ -14,8 +15,7 @@ public class Train {
     }
 
     public String print() {
-    	StringBuilder result = new StringBuilder(wagons.stream().map(a -> a.getNameWagon()).reduce("",(a,b) -> a + "::" + b ));
-    	result.delete(0, 2);
+    	String result = wagons.stream().map(a -> a.getNameWagon()).collect(Collectors.joining("::"));   	
     	return result.toString();
     }
     
