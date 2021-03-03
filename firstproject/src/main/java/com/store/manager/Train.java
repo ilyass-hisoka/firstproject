@@ -3,7 +3,7 @@ package com.store.manager;
 
 public class Train {
 	 
-	private StringBuilder result ;;
+	private StringBuilder result ;
 	
     public Train(String hpp) {
     	result = new StringBuilder();
