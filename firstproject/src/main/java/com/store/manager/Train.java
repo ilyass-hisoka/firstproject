@@ -1,12 +1,10 @@
 package com.store.manager;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class Train {
 	 
-	private StringBuilder result ;
 	
 	private List<Wagon> wagons ;
 	
